@@ -1,0 +1,224 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 3849 >>
+stream
+1 1 1 rg 0 0 595 842 re f
+0.06 0.17 0.37 rg 0 774 595 68 re f
+0.96 0.43 0.1 rg 0 63 595 5 re f
+1 1 1 rg BT /F2 10 Tf 42 812 Td (SERAH TERIMA API  |  XI RPL) Tj ET
+0.06 0.17 0.37 rg BT /F2 23 Tf 42 760 Td (Perpustakaan Digital API) Tj ET
+0.12 0.36 0.75 rg BT /F1 10 Tf 42 738 Td (Laporan serah terima dan verifikasi lokal  |  Versi 1.0.0) Tj ET
+0.91 0.95 0.99 rg 42 653 511 57 re f
+0.12 0.36 0.75 rg BT /F2 10 Tf 55 692 Td (RINGKASAN) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 676 Td (Aplikasi Laravel 13 dari skeleton kosong kini menyediakan API perpustakaan dengan 10) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 663 Td (route. Kontrak, panduan penggunaan, OpenAPI, Postman collection, seeder data fiktif,) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 650 Td (dan feature tests tersedia di repository.) Tj ET
+0.96 0.43 0.1 rg 42 620 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 625 Td (Identitas siswa dan penguji) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 599 Td (Nama: _________________________________ Kelas: XI RPL ____) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 577 Td (Nama penguji silang: __________________________________________) Tj ET
+0.96 0.43 0.1 rg 42 545 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 550 Td (Hasil verifikasi implementasi) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 524 Td (Pest seluruh suite: 7 test lulus, 41 assertions. Di dalamnya terdapat 5 feature test API dengan) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 511 Td (39 assertions. Cakupan API: register/login, profil/logout, token, filter katalog, validasi,) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 498 Td (izin, peminjaman, konflik stok, dan privasi riwayat.) Tj ET
+0.12 0.36 0.75 rg 42 458 511 24 re f
+1 1 1 rg BT /F2 8 Tf 51 467 Td (Area) Tj ET
+1 1 1 rg BT /F2 8 Tf 153 467 Td (Kontrak yang dicek) Tj ET
+1 1 1 rg BT /F2 8 Tf 468 467 Td (Hasil) Tj ET
+0.91 0.95 0.99 rg 42 420 511 38 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 443 Td (Auth) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 443 Td (Register 201; login 200; kredensial salah 401) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 443 Td (LULUS) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 405 Td (Bearer) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 405 Td (Tanpa token 401; logout mencabut token saat ini) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 405 Td (LULUS) Tj ET
+0.91 0.95 0.99 rg 42 344 511 38 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 367 Td (Buku) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 367 Td (Array stabil; filter dan sort; admin 201/204; anggota 403) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 367 Td (LULUS) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 329 Td (Validasi) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 329 Td (Input salah 422; resource tidak ada 404) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 329 Td (LULUS) Tj ET
+0.91 0.95 0.99 rg 42 268 511 38 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 291 Td (Peminjaman) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 291 Td (Transaksi 201; stok dikurangi sesuai jumlah) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 291 Td (LULUS) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 253 Td (Konflik stok) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 253 Td (409; tidak ada transaksi baru; stok tetap) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 253 Td (LULUS) Tj ET
+0.91 0.95 0.99 rg 42 192 511 38 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 215 Td (Kepemilikan) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 153 215 Td (Riwayat hanya terlihat pemilik token) Tj ET
+0.12 0.36 0.75 rg BT /F2 7.4 Tf 468 215 Td (LULUS) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 171 Td (Server lokal: http://127.0.0.1:8000. Base URL dan path /api tertulis di README dan environment) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 158 Td (Postman.) Tj ET
+0.79 0.84 0.91 RG 42 48 m 553 48 l S
+0.12 0.36 0.75 rg BT /F1 8 Tf 42 30 Td (Dokumentasi berdasarkan implementasi lokal  |  14 November 2026) Tj ET
+0.12 0.36 0.75 rg BT /F2 8 Tf 464 30 Td (API HANDOVER) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 4890 >>
+stream
+1 1 1 rg 0 0 595 842 re f
+0.06 0.17 0.37 rg 0 774 595 68 re f
+0.96 0.43 0.1 rg 0 63 595 5 re f
+1 1 1 rg BT /F2 10 Tf 42 812 Td (SERAH TERIMA API  |  XI RPL) Tj ET
+0.06 0.17 0.37 rg BT /F2 23 Tf 42 760 Td (Kontrak dan perilaku data) Tj ET
+0.12 0.36 0.75 rg BT /F1 10 Tf 42 738 Td (Request dan respons mengikuti routes serta validasi aplikasi) Tj ET
+0.96 0.43 0.1 rg 42 696 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 701 Td (Endpoint yang disiapkan) Tj ET
+0.12 0.36 0.75 rg 42 651 511 22 re f
+1 1 1 rg BT /F2 8 Tf 51 658 Td (Kelompok) Tj ET
+1 1 1 rg BT /F2 8 Tf 140 658 Td (Route) Tj ET
+1 1 1 rg BT /F2 8 Tf 440 658 Td (Akses) Tj ET
+0.91 0.95 0.99 rg 42 620 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 636 Td (Auth) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 636 Td (POST /api/register, POST /api/login) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 636 Td (Publik) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 605 Td (Auth) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 605 Td (GET /api/profil, POST /api/logout) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 605 Td (Bearer) Tj ET
+0.91 0.95 0.99 rg 42 558 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 574 Td (Buku) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 574 Td (GET /api/buku, GET /api/buku/{id}) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 574 Td (Bearer) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 543 Td (Buku) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 543 Td (POST /api/buku, DELETE /api/buku/{id}) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 543 Td (Admin + Bearer) Tj ET
+0.91 0.95 0.99 rg 42 496 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 512 Td (Pinjam) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 512 Td (POST /api/peminjaman) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 512 Td (Anggota + Bearer) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 481 Td (Pinjam) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 140 481 Td (GET /api/peminjaman) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 440 481 Td (Pemilik + Bearer) Tj ET
+0.96 0.43 0.1 rg 42 444 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 449 Td (Aturan data yang dibuktikan) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 415 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 415 Td (Login mengirim data.token bertipe Bearer. Token Sanctum aktif disimpan server, logout) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 404 Td (menghapus token saat ini.) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 391 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 391 Td (Katalog menerima genre, sort=judul|stok, order=asc|desc; hasil selalu array, termasuk saat) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 380 Td (kosong.) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 367 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 367 Td (Field transaksi: nama_peminjam, telepon string, jatuh_tempo YYYY-MM-DD, dan array items) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 356 Td (berisi buku_id serta jumlah.) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 343 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 343 Td (Transaksi valid menyimpan judul snapshot dan mengurangi stok dalam satu database) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 332 Td (transaction. Stok kurang menghasilkan 409 tanpa perubahan data.) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 319 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 319 Td (Anggota hanya melihat riwayatnya; role admin dibutuhkan untuk menambah dan menghapus buku.) Tj ET
+0.96 0.43 0.1 rg 42 300 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 305 Td (Perubahan setelah inspeksi) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 271 Td (Handout adalah contoh rancangan. Route, nama field, role, dan respons di kontrak final mengikuti) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 260 Td (kode aplikasi. Implementasi menambahkan validasi eksplisit, kode 401/403/404/409/422, migrasi) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 249 Td (data, dan akun seed fiktif.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 234 Td (Seeder memakai akun dan buku fiktif. Password latihan hanya untuk lokal; jangan unggah .env,) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 223 Td (database dengan data pribadi, atau token aktif.) Tj ET
+0.96 0.43 0.1 rg 42 202 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 207 Td (Berkas yang disiapkan) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 173 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 173 Td (README dan panduan: instalasi, server, data demo, dan urutan uji; kontrak API dan OpenAPI:) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 162 Td (field, status, auth, serta efek data.) Tj ET
+0.96 0.43 0.1 rg BT /F2 9 Tf 50 149 Td (-) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 149 Td (Postman collection/environment berisi Auth, Buku, Peminjaman, serta fixture success/failure.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 63 138 Td (Pest: 7 test dan 41 assertions, termasuk 5 feature test API.) Tj ET
+0.79 0.84 0.91 RG 42 48 m 553 48 l S
+0.12 0.36 0.75 rg BT /F1 8 Tf 42 30 Td (Dokumentasi berdasarkan implementasi lokal  |  14 November 2026) Tj ET
+0.12 0.36 0.75 rg BT /F2 8 Tf 464 30 Td (API HANDOVER) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 3559 >>
+stream
+1 1 1 rg 0 0 595 842 re f
+0.06 0.17 0.37 rg 0 774 595 68 re f
+0.96 0.43 0.1 rg 0 63 595 5 re f
+1 1 1 rg BT /F2 10 Tf 42 812 Td (SERAH TERIMA API  |  XI RPL) Tj ET
+0.06 0.17 0.37 rg BT /F2 23 Tf 42 760 Td (Catatan uji silang dan refleksi) Tj ET
+0.12 0.36 0.75 rg BT /F1 10 Tf 42 738 Td (Uji lokal selesai; bagian yang membutuhkan teman ditandai jujur) Tj ET
+0.96 0.43 0.1 rg 42 696 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 701 Td (Status uji silang) Tj ET
+0.91 0.95 0.99 rg 42 618 511 57 re f
+0.12 0.36 0.75 rg BT /F2 10 Tf 55 657 Td (PERLU DIISI SAAT PENGUJIAN TEMAN) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 641 Td (Uji manual pada Postman oleh teman belum dilakukan dalam sesi ini. Tukarkan) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 628 Td (repository/collection, isi nama penguji dan hasil aktual, lalu lampirkan catatan uji) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 55 615 Td (dari perangkat kedua sebelum pengumpulan.) Tj ET
+0.12 0.36 0.75 rg 42 579 511 22 re f
+1 1 1 rg BT /F2 8 Tf 51 586 Td (Skenario) Tj ET
+1 1 1 rg BT /F2 8 Tf 221 586 Td (Harapan) Tj ET
+1 1 1 rg BT /F2 8 Tf 401 586 Td (Aktual teman) Tj ET
+0.91 0.95 0.99 rg 42 548 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 564 Td (Login -> profil) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 221 564 Td (200, token Bearer bekerja) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 401 564 Td (________________) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 533 Td (Filter katalog) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 221 533 Td (200, hasil sesuai query) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 401 533 Td (________________) Tj ET
+0.91 0.95 0.99 rg 42 486 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 502 Td (Jumlah item 0) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 221 502 Td (422, stok tetap) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 401 502 Td (________________) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 471 Td (Stok tidak cukup) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 221 471 Td (409, data batal) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 401 471 Td (________________) Tj ET
+0.91 0.95 0.99 rg 42 424 511 31 re f
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 51 440 Td (Logout -> profil lama) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 221 440 Td (401) Tj ET
+0.06 0.17 0.37 rg BT /F1 7.4 Tf 401 440 Td (________________) Tj ET
+0.96 0.43 0.1 rg 42 403 4 17 re f
+0.12 0.36 0.75 rg BT /F2 13 Tf 54 408 Td (Jawaban refleksi) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 374 Td (1. Token anggota dan admin berbeda izin; base_url lokal dan tanggal YYYY-MM-DD harus disiapkan.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 363 Td (README dan Postman memberi langkah login serta menyimpan data.token secara otomatis.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 348 Td (2. Contoh handout bukan hasil API proyek. Perbedaan diselaraskan dan ditulis: route profil) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 337 Td (memakai /api/profil, login mengirim token pada data.token, dan perubahan buku memerlukan admin.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 326 Td (Respons aktual harus dibandingkan ketika koleksi dijalankan.) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 311 Td (3. Setelah pemeriksaan, API, migrasi, token/logout, role, validasi, transaksi stok, README,) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 300 Td (kontrak, OpenAPI, collection, environment, dan feature tests diselesaikan. Lima feature tests) Tj ET
+0.06 0.17 0.37 rg BT /F1 9 Tf 48 289 Td (kemudian lulus.) Tj ET
+0.79 0.84 0.91 RG 42 48 m 553 48 l S
+0.12 0.36 0.75 rg BT /F1 8 Tf 42 30 Td (Dokumentasi berdasarkan implementasi lokal  |  14 November 2026) Tj ET
+0.12 0.36 0.75 rg BT /F2 8 Tf 464 30 Td (API HANDOVER) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000225 00000 n 
+0000000327 00000 n 
+0000004228 00000 n 
+0000004364 00000 n 
+0000009306 00000 n 
+0000009442 00000 n 
+0000013053 00000 n 
+trailer
+<< /Size 11 /Root 1 0 R >>
+startxref
+13190
+%%EOF

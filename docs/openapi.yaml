@@ -1,0 +1,181 @@
+openapi: 3.0.3
+info:
+  title: Perpustakaan Digital API
+  version: 1.0.0
+  description: Kontrak OpenAPI diselaraskan dengan routes/api.php.
+servers:
+  - url: http://127.0.0.1:8000
+tags:
+  - name: Auth
+  - name: Buku
+  - name: Peminjaman
+paths:
+  /api/register:
+    post:
+      tags: [Auth]
+      summary: Membuat akun anggota
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [name, email, password, password_confirmation]
+              properties:
+                name: {type: string, maxLength: 100}
+                email: {type: string, format: email}
+                password: {type: string, minLength: 8}
+                password_confirmation: {type: string}
+      responses:
+        '201': {description: Akun dibuat}
+        '422': {description: Validasi gagal}
+  /api/login:
+    post:
+      tags: [Auth]
+      summary: Login dan membuat Bearer token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: {type: string, format: email}
+                password: {type: string}
+      responses:
+        '200':
+          description: Token dan profil
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      token_type: {type: string, example: Bearer}
+                      token: {type: string}
+                      user: {$ref: '#/components/schemas/User'}
+        '401': {description: Kredensial salah}
+        '422': {description: Format input salah}
+  /api/profil:
+    get:
+      tags: [Auth]
+      security: [{sanctum: []}]
+      summary: Mendapatkan pengguna pemilik token
+      responses:
+        '200': {description: Profil}
+        '401': {description: Token tidak ada atau tidak sah}
+  /api/logout:
+    post:
+      tags: [Auth]
+      security: [{sanctum: []}]
+      summary: Mencabut token saat ini
+      responses:
+        '200': {description: Logout berhasil}
+        '401': {description: Token tidak ada atau tidak sah}
+  /api/buku:
+    get:
+      tags: [Buku]
+      security: [{sanctum: []}]
+      summary: Daftar buku
+      parameters:
+        - {name: genre, in: query, schema: {type: string}}
+        - {name: sort, in: query, schema: {type: string, enum: [judul, stok]}}
+        - {name: order, in: query, schema: {type: string, enum: [asc, desc]}}
+      responses:
+        '200': {description: Daftar buku, termasuk array kosong}
+        '401': {description: Token tidak ada atau tidak sah}
+        '422': {description: Parameter tidak valid}
+    post:
+      tags: [Buku]
+      security: [{sanctum: []}]
+      summary: Menambah buku (admin)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [judul, penulis, genre, stok]
+              properties:
+                judul: {type: string, maxLength: 150}
+                penulis: {type: string, maxLength: 100}
+                genre: {type: string, maxLength: 60}
+                stok: {type: integer, minimum: 0, maximum: 100000}
+      responses:
+        '201': {description: Buku dibuat}
+        '401': {description: Token tidak ada atau tidak sah}
+        '403': {description: Hanya admin}
+        '422': {description: Validasi gagal}
+  /api/buku/{book}:
+    parameters:
+      - {name: book, in: path, required: true, schema: {type: integer, minimum: 1}}
+    get:
+      tags: [Buku]
+      security: [{sanctum: []}]
+      summary: Detail buku
+      responses:
+        '200': {description: Buku ditemukan}
+        '401': {description: Token tidak ada atau tidak sah}
+        '404': {description: Buku tidak ditemukan}
+    delete:
+      tags: [Buku]
+      security: [{sanctum: []}]
+      summary: Menghapus buku (admin)
+      responses:
+        '204': {description: Dihapus tanpa body}
+        '401': {description: Token tidak ada atau tidak sah}
+        '403': {description: Hanya admin}
+        '404': {description: Buku tidak ditemukan}
+  /api/peminjaman:
+    get:
+      tags: [Peminjaman]
+      security: [{sanctum: []}]
+      summary: Riwayat pemilik token
+      responses:
+        '200': {description: Array riwayat milik pengguna saja}
+        '401': {description: Token tidak ada atau tidak sah}
+    post:
+      tags: [Peminjaman]
+      security: [{sanctum: []}]
+      summary: Membuat transaksi pinjam dan mengurangi stok
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [nama_peminjam, telepon, jatuh_tempo, items]
+              properties:
+                nama_peminjam: {type: string, maxLength: 100}
+                telepon: {type: string, maxLength: 20}
+                jatuh_tempo: {type: string, format: date, description: Hari ini atau setelahnya}
+                items:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: object
+                    required: [buku_id, jumlah]
+                    properties:
+                      buku_id: {type: integer, minimum: 1}
+                      jumlah: {type: integer, minimum: 1, maximum: 1000}
+      responses:
+        '201': {description: Peminjaman dibuat dan stok diperbarui atomik}
+        '401': {description: Token tidak ada atau tidak sah}
+        '409': {description: Stok tidak cukup, transaksi batal}
+        '422': {description: Validasi gagal; data tidak berubah}
+components:
+  securitySchemes:
+    sanctum:
+      type: http
+      scheme: bearer
+  schemas:
+    User:
+      type: object
+      properties:
+        id: {type: integer}
+        name: {type: string}
+        email: {type: string, format: email}
+        role: {type: string, enum: [admin, anggota]}
